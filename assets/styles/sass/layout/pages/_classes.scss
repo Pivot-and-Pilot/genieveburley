@@ -1,0 +1,77 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~ Classes- Template ~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.classes-template {
+	.single-class {
+		color: $primary-color;
+		margin: 25px 25px 0;
+		background-color: $secondary-color;
+
+		&__image {
+			min-height: 450px;
+			height: 100%;
+		}
+
+		&__content-wrapper {
+			padding: 30px 20px;
+
+			@include media-breakpoint-up(sm) {
+				padding-left: ($element-space__sm * .75);
+				padding-right: ($element-space__sm * .75);
+			}
+
+			@include media-breakpoint-up(md) {
+				padding: 0 ($element-space__md * .75);
+				background: $secondary-color;
+				margin: ($element-space__md * .75) 0;
+			}
+
+			@include media-breakpoint-up(lg) {
+				padding-left: ($element-space__lg * .75);
+				padding-right: ($element-space__lg * .75);
+				margin: ($element-space__lg * .75) 0;
+			}
+
+			@include media-breakpoint-up(xl) {
+				padding-left: ($element-space__xl * .75);
+				padding-right: ($element-space__xl * .75);
+				margin: ($element-space__xl * .75) 0;
+			}
+
+			&__title {
+				@include fluid-type(35px, 49px, 1.1);
+				margin-bottom: 10px;
+			}
+
+			&__subtitle {
+				@include primary-font('bold');
+				@include letter-spacing(100);
+				font-size: 11px;
+				line-height: 1.5;
+				text-transform: uppercase;
+				display: block;
+			}
+
+			&__content {
+				line-height: 1.4;
+			}
+
+			&__address {
+				@include primary-font('bold');
+				display: block;
+				margin-top: 5px;
+				padding-right: 25px;
+			}
+
+			.genieve-burley-button {
+				padding: 12.5px 30px;
+			}
+
+			&__logo {
+				width: 110px;
+				height: auto;
+			}
+		}
+	}
+}

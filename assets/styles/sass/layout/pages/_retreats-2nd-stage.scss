@@ -1,0 +1,773 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~ Retreats 2nd stage - Template ~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.retreats-second-stage-template {
+	h2 {
+		@extend h1;
+	}
+
+	.location {
+		color: $primary-color;
+		margin-top: ($element-space__xs * .75);
+
+		@include media-breakpoint-up(sm) {
+		    margin-top: ($element-space__sm * .75);
+		}
+
+		@include media-breakpoint-up(md) {
+		    margin-top: ($element-space__md * .75);
+		}
+
+		@include media-breakpoint-up(lg) {
+		    margin-top: ($element-space__lg * .75);
+		    margin-left: 25px;
+		    margin-right: 25px;
+		}
+
+		@include media-breakpoint-up(xl) {
+		    margin-top: ($element-space__xl * .75);
+		}
+
+		&__content-wrapper {
+			margin-left: 25px;
+			margin-right: 25px;
+
+			@include media-breakpoint-up(lg) {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+
+		&__photos {
+			margin-left: 25px;
+			margin-right: 25px;
+
+			@include media-breakpoint-up(lg) {
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			&__image {
+				height: 430px;
+
+				@include media-breakpoint-up(sm) {
+					height: 480px;
+				}
+
+				@include media-breakpoint-up(md) {
+					height: 530px;
+				}
+
+				@include media-breakpoint-up(lg) {
+					height: 600px;
+				}
+
+				@include media-breakpoint-up(xl) {
+					height: 700px;
+				}
+
+				&--second {
+					margin-top: 25px;
+
+					@include media-breakpoint-up(md) {
+					    margin-top: -($element-space__md * 1.25);
+					    height: 550px;
+					}
+
+					@include media-breakpoint-up(lg) {
+					    margin-top: -($element-space__lg * 1.25);
+					    height: 630px;
+					}
+
+					@include media-breakpoint-up(xl) {
+					    margin-top: -($element-space__xl * 1.25);
+					    height: 740px;
+					}
+				}
+			}
+		}
+
+		&__gallery {
+			&__image {
+				width: 350px;
+				height: 350px;
+				display: block;
+				max-width: calc(100vw - 50px);
+
+				@include media-breakpoint-up(lg) {
+					width: auto;
+					height: calc(33.33vw - 35px);
+					max-height: 400px;
+				}
+			}
+		}
+	}
+
+	.food {
+		color: $primary-color;
+		margin-top: ($element-space__xs * .5);
+
+		@include media-breakpoint-up(sm) {
+		    margin-top: ($element-space__sm * .5);
+		}
+
+		@include media-breakpoint-up(md) {
+		    margin-top: ($element-space__md * .5);
+		    margin-left: 25px;
+			margin-right: 25px;
+		}
+
+		@include media-breakpoint-up(lg) {
+		    margin-top: ($element-space__lg * .5);
+		}
+
+		@include media-breakpoint-up(xl) {
+		    margin-top: ($element-space__xl * .5);
+		}
+
+		&__content-wrapper {
+			margin-left: 25px;
+			margin-right: 25px;
+
+			@include media-breakpoint-up(md) {
+				margin-left: auto;
+				margin-right: auto;
+				max-width: 400px;
+			}
+		}
+
+		&__tabs {
+			border-bottom: none;
+
+			.nav-item {
+				margin: 0 -1px;
+
+				.nav-link {
+					@include primary-font('bold');
+					@include letter-spacing(100);
+					font-size: 16px;
+					line-height: 1.1;
+					padding: 12.5px 25px;
+					border: none;
+					border-radius: 0;
+					text-transform: uppercase;
+					background: #d0e5e5;
+					color: $primary-color;
+
+					@include media-breakpoint-up(md) {
+						background: transparent;
+					}
+
+					&--first {
+						margin-left: 25px;
+
+						@include media-breakpoint-up(md) {
+							margin-left: 0;
+						}
+					}
+
+					&:hover,
+					&.active {
+						background: $primary-color;
+						color: #fff;
+					}
+				}
+			}
+		}
+
+		.menus {
+			.single-menu {
+				padding: 0 40px;
+
+				@include media-breakpoint-up(md) {
+					padding: 0;
+					max-width: 350px;
+					margin-left: auto;
+					margin-right: auto;
+				}
+
+				&__title {
+					@include primary-font('bold');
+					@include letter-spacing(100);
+					font-size: 16px;
+					line-height: 1.5;
+					text-transform: uppercase;
+				}
+
+				&__content {
+					margin-top: 10px;
+
+					.small-text {
+						margin-top: 10px;
+					}
+				}
+			}
+		}
+
+		&__gallery {
+			&__image {
+				height: 400px;
+				display: block;
+
+				@include media-breakpoint-up(sm) {
+					height: 420px;
+				}
+
+				@include media-breakpoint-up(md) {
+					height: 460px;
+				}
+
+				@include media-breakpoint-up(lg) {
+					height: 500px;
+				}
+			}
+
+			.owl-dots {
+			    position: absolute;
+			    z-index: 2;
+			    bottom: 0;
+			    width: 100%;
+			    margin-bottom:25px;
+
+			    @include media-breakpoint-up(md) {
+			    	margin-bottom: 30px;
+			    }
+
+			    @include media-breakpoint-up(lg) {
+			    	margin-bottom: 40px;
+			    }
+
+			    .owl-dot {
+			        &.active {
+			            span {
+			                background: $secondary-color !important;
+			            }
+			        }
+
+			        span {
+			            border: 1px solid $secondary-color !important;
+			        }
+			    }
+			}
+		}
+	}
+
+	.activities {
+		position: relative;
+		color: $primary-color;
+
+		@include media-breakpoint-up(md) {
+			margin-left: 25px;
+			margin-right: 25px;
+		}
+
+		&__title {
+			margin-left: 25px;
+
+			@include media-breakpoint-up(md) {
+				margin-left: 0;
+			}
+		}
+
+		&__pattern {
+			position: absolute;
+			height: auto;
+			top: 50%;
+			width: 110vw;
+			left: -50px;
+
+			&:first-child {
+				top: 50px;
+			}
+		}
+
+		.activities-desktop {
+			.single-activity {
+				&:nth-child(even) {
+					.single-activity__image {
+						float: right;
+					}
+				}
+
+				&:nth-child(3n) {
+					margin-top: -40px;
+
+					.single-activity__content-wrapper {
+						margin-bottom: -40px !important;
+					}
+				}
+			}
+		}
+
+		.single-activity {
+			margin-top: 40px;
+			width: 350px;
+			max-width: calc(100vw - 50px);
+
+			@include media-breakpoint-up(md) {
+				margin-top: 50px;
+				width: auto;
+			}
+
+			&__image {
+				width: 100%;
+				height: 250px;
+				display: block;
+				overflow: hidden;
+
+				@include media-breakpoint-up(md) {
+					width: 55vw;
+					height: 55vw;
+					max-height: 600px;
+				}
+			}
+
+			&__content-wrapper {
+				background: $secondary-color;
+				margin: 0;
+				color: $primary-color;
+				padding: 20px;
+				position: relative;
+				z-index: 1;
+
+				@include media-breakpoint-up(sm) {
+					padding: ($element-space__sm) 25px;
+				}
+
+				@include media-breakpoint-up(md) {
+					padding: ($element-space__md) 40px;
+					margin: 40px 0;
+				}
+
+				@include media-breakpoint-up(lg) {
+					padding: ($element-space__lg) 40px;
+				}
+
+				&__superscription {
+				    @include primary-font('bold');
+				    @include letter-spacing(100);
+				    font-size: 11px;
+				    line-height: 1.5;
+				    text-transform: uppercase;
+				}
+			}
+		}
+	}
+
+	.instructors {
+		color: $primary-color;
+
+		@include media-breakpoint-up(lg) {
+			margin: 0 25px;
+		}
+
+		&__title {
+			display: block;
+			margin-left: 25px;
+
+			@include media-breakpoint-up(lg) {
+				margin-left: 0;
+			}
+		}
+
+		&__gallery {
+			&__item {
+				width: 350px;
+				max-width: calc(100vw - 50px);
+
+				@include media-breakpoint-up(lg) {
+					width: auto;
+				}
+
+				&__image {
+					height: 350px;
+					width: 100%;
+					display: block;
+
+					@include media-breakpoint-up(md) {
+						height: 330px;
+					}
+
+					@include media-breakpoint-up(lg) {
+						height: calc(33.33vw - 35px);
+						max-height: 400px;
+					}
+				}
+
+				&__title {
+					@include primary-font('bold');
+					@include letter-spacing(100);
+					font-size: 11px;
+					line-height: 1.5;
+					text-transform: uppercase;
+				}
+
+				&__content {
+					margin-top: 10px;
+
+					@include media-breakpoint-up(md) {
+						margin-top: 15px;
+					}
+				}
+			}
+		}
+	}
+
+	.booking {
+		background: $secondary-color;
+		color: $primary-color;
+		padding: 40px 25px;
+
+		&__superscription {
+		    @include primary-font('bold');
+		    @include letter-spacing(100);
+		    font-size: 11px;
+		    line-height: 1.5;
+		    text-transform: uppercase;
+		}
+
+		&__content {
+			margin-top: 10px;
+			max-width: 400px;
+		}
+
+		.prices {
+			.single-price {
+				margin-top: 60px;
+
+				.simpay-test-mode-badge-container {
+					display: none;
+				}
+
+				&__title {
+					@include primary-font('bold');
+					@include letter-spacing(100);
+					font-size: 16px;
+					text-transform: uppercase;
+				}
+
+				&__price {
+					margin-top: 15px;
+				}
+
+				&__content {
+					margin-top: 7.5px;
+
+					ul {
+						list-style: none;
+						margin-top: 15px;
+						margin-left: 0;
+
+						li {
+							position: relative;
+							padding-left: 15px;
+							margin-top: 2.5px;
+
+							&:before {
+								position: absolute;
+								left: 0;
+								top: calc(50% - 2px);
+								content: '';
+								width: 4px;
+								height: 4px;
+								border-radius: 50%;
+								background: $primary-color;
+							}
+						}
+					}
+				}
+
+				&__buy {
+					display: block;
+					width: 100%;
+					margin-top: 20px;
+
+					@include media-breakpoint-up(md) {
+						margin-top: 40px;
+					}
+
+					.card {
+						border-radius: 0;
+						border: none;
+
+						.card-header {
+							padding: 0;
+							border-radius: 0;
+							background: transparent;
+
+							&__link {
+								@include primary-font('bold');
+								@include letter-spacing(100);
+								font-size: 11px;
+								line-height: 1.5;
+								text-transform: uppercase;
+								color: $primary-color;
+								text-align: center;
+								padding: 12.5px;
+								display: block;
+								background: $secondary-color;
+								border: 1px solid $primary-color;
+
+								&:hover,
+								&[aria-expanded="true"] {
+									background: $primary-color;
+									color: $secondary-color;
+								}
+							}
+						}
+
+						.card-body {
+							margin-top: -1px;
+							font-size: 12px;
+							padding: 25px 0 0;
+							background: $secondary-color;
+							border: 1px solid $primary-color;
+
+							&__title {
+								@include primary-font('bold');
+								@include letter-spacing(100);
+								font-size: 12px;
+								line-height: 1.5;
+								text-transform: uppercase;
+								padding-left: 25px;
+								padding-right: 25px;
+							}
+
+							&__upgrade {
+								margin-top: 10px;
+								padding-left: 25px;
+								padding-right: 25px;
+							}
+
+							&__content {
+								padding-left: 25px;
+								padding-right: 25px;
+								margin-top: 5px;
+
+								ul {
+									list-style: none;
+									margin-top: 10px;
+									margin-left: 0;
+
+									li {
+										position: relative;
+										padding-left: 15px;
+										margin-top: 2.5px;
+
+										&:before {
+											position: absolute;
+											left: 0;
+											top: calc(50% - 1.5px);
+											content: '';
+											width: 3px;
+											height: 3px;
+											border-radius: 50%;
+											background: $primary-color;
+										}
+									}
+								}
+							}
+
+							&__checkboxes {
+
+                                label {
+                                    display: inline-block;
+                                    color: $primary-color;
+                                    position: relative;
+                                    cursor: default;
+                                    margin-left: 25px;
+                                    height: 20px;
+                                    padding-left: 30px;
+                                    line-height: 20px;
+
+                                    @include media-breakpoint-up(sm) {
+                                        padding-left: 30px;
+                                        height: 25px;
+                                        line-height: 25px;
+                                    }
+
+                                    &:before,
+                                    &:after {
+                                        @extend %single-transition;
+                                        position: absolute;
+                                        width: 20px;
+                                        height: 20px;
+                                        left: 0;
+                                        top: 0;
+                                        cursor: pointer;
+
+                                        @include media-breakpoint-up(sm) {
+                                            width: 25px;
+                                            height: 25px;
+                                        }
+                                    }
+
+                                    &:before {
+                                        content: '';
+                                        display: inline-block;
+                                        border: 1px solid $primary-color;
+                                        background-color: $secondary-color;
+                                    }
+
+                                    &:after {
+                                        content: '';
+                                        width: 30px;
+                                        height: 10px;
+                                        left: 5px;
+                                        top: -3px;
+                                        display: block;
+                                        border-left: 1px solid $primary-color;
+                                        border-bottom: 1px solid $primary-color;
+                                        opacity: 0;
+                                        transform: rotate(-45deg);
+                                    }
+
+                                    &.label-no {
+                                    	margin-left: 10px;
+                                    }
+                                }
+
+                                input {
+                                    &[type="checkbox"] {
+                                        opacity: 0;
+                                        position: absolute;
+                                        width: 20px;
+                                        height: 20px;
+                                        left: 25px;
+                                        top: 0;
+                                        z-index: 2;
+                                        cursor: pointer;
+
+                                        @include media-breakpoint-up(sm) {
+                                            width: 25px;
+                                            height: 25px;
+                                        }
+
+                                        &.input-no {
+                                        	left: 10px;
+                                        }
+
+                                        &:checked {
+                                            & + label {
+                                                @include primary-font('regular');
+                                            }
+
+                                            &,
+                                            &:hover {
+                                                & + label {
+                                                    &:before {
+                                                        border-color: $primary-color;
+                                                    }
+
+                                                    &:after {
+                                                        opacity: 1;
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        &:hover {
+                                            & + label {
+                                                &:after {
+                                                    opacity: .5;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+							}
+
+							.simpay-form-control {
+								padding: 0;
+								margin: 0;
+							}
+
+							&__pay,
+							.simpay-payment-btn {
+								@include primary-font('bold');
+								@include letter-spacing(100);
+								font-size: 11px;
+								display: block;
+								width: 100%;
+								background: $secondary-color;
+								color: $primary-color;
+								text-align: center;
+								text-transform: uppercase;
+								margin-top: 20px;
+								border: none;
+								border-top: 1px solid $primary-color;
+								padding: 12.5px;
+								cursor: pointer;
+								border-radius: 0;
+
+								&:hover,
+								&:focus {
+									background: $primary-color;
+									color: $secondary-color;
+
+									span {
+										color: $secondary-color;
+										border: none;
+										box-shadow: none;
+									}
+								}
+
+								span {
+									@include primary-font('bold');
+									@include letter-spacing(100);
+									font-size: 11px;
+									background: transparent;
+									padding: 0;
+									display: inline;
+									border: none;
+									border-radius: 0;
+									box-shadow: none;
+									text-decoration: none;
+									color: $primary-color;
+									line-height: 1;
+									text-shadow: none;
+								}
+
+								&--disabled {
+									cursor: no-drop !important;
+									pointer-events: none;
+
+									&:hover {
+										cursor: no-drop !important;
+									}
+								}
+							}
+
+							.simpay-test-mode-badge-container {
+								position: absolute;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.stripe_checkout_app {
+	html {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.Overlay-Background {
+		background: rgba($primary-color, .8) !important;
+	}
+}
+
+.Overlay-Background {
+	background: rgba($primary-color, .8) !important;
+}
+
+main.Modal {
+	border: 12px solid red;
+}

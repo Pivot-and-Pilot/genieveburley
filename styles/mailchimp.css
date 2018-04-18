@@ -1,0 +1,56 @@
+/* ====================================================== */
+/* ======================= DESKTOP ====================== */
+/* ====================================================== */
+
+#mc_embed_signup {
+  color: rgb(116, 168, 166);
+  width: 30vw;
+  position: absolute;
+  left: 35vw;
+}
+#mc_embed_signup .mc-field-group {
+  display: flex;
+  flex-direction: column;
+}
+#mc_embed_signup .mc-field-group label {
+  font-size: 26px;
+}
+#mc_embed_signup .mc-field-group input {
+  border: none;
+  border-bottom: 1px solid rgb(116, 168, 166);
+  height: 40px;
+  margin-top: 10px;
+  color: rgb(116, 168, 166);
+  font-size: 20px;
+  border-radius: 0;
+}
+#mc_embed_signup .mc-field-group input::placeholder {
+  color: rgb(116, 168, 166);
+  font-size: 20px;
+}
+#mc_embed_signup #mc-embedded-subscribe {
+  width: 100%;
+  border: 1px solid rgb(116, 168, 166);
+  color: rgb(116, 168, 166);
+  height: 40px;
+  font-size: 20px;
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 0;
+}
+
+/* ====================================================== */
+/* ======================= MOBILE ======================= */
+/* ====================================================== */
+
+@media only screen and (max-width: 1025px) {
+
+  #mc_embed_signup {
+    color: rgb(116, 168, 166);
+    width: 100vw;
+    position: relative;
+    left: 0;
+    margin-top: 20px;
+  }
+
+}

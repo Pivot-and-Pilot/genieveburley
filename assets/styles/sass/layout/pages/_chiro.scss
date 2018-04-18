@@ -1,0 +1,157 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~ Chiro - Template ~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.chiro-template {
+	.adjustments {
+		color: $primary-color;
+
+		&__content-wrapper {
+			padding: 0 15px;
+			max-width: 480px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		&__carousel {
+			width: auto;
+
+			@include media-breakpoint-up(lg) {
+				display: inline-block;
+			}
+
+			.owl-dots {
+				@include media-breakpoint-up(lg) {
+					display: none !important;
+				}
+			}
+		}
+
+		.single-adjust {
+			width: 260px;
+
+			@include media-breakpoint-up(lg) {
+				max-width: 20vw;
+			}
+
+			&__icon {
+				width: 85px;
+				height: 85px;
+				fill-opacity: 0;
+			  	transition: fill-opacity 1s;
+
+			  	&.finished {
+  				  fill-opacity: 1;
+  				}
+
+			}
+
+			&__title {
+				@include primary-font('bold');
+				@include letter-spacing(100);
+				font-size: 14px;
+				line-height: 1.4;
+				max-width: 260px;
+				margin-left: auto;
+				margin-right: auto;
+				text-transform: uppercase;
+				margin-top: 10px;
+			}
+		}
+	}
+
+	.for-who {
+		background: $secondary-color;
+		color: $primary-color;
+		position: relative;
+		padding: $element-space__xs 25px;
+		padding-bottom: ($element-space__xs * 3);
+		margin-top: ($element-space__xs * 4);
+		margin-bottom: 25px;
+
+		@include media-breakpoint-up(sm) {
+		    padding: $element-space__sm;
+		    padding-bottom: ($element-space__sm * 2);
+		    margin-top: ($element-space__sm * 2);
+		    margin-left: 25px;
+		    margin-right: 25px;
+		}
+
+		@include media-breakpoint-up(md) {
+		    padding: $element-space__md;
+		    padding-bottom: ($element-space__md * 2);
+		    margin-top: ($element-space__md * 2);
+		}
+
+		@include media-breakpoint-up(lg) {
+		    padding: $element-space__lg;
+		    padding-bottom: ($element-space__lg * 2);
+		    margin-top: ($element-space__lg * 2);
+		}
+
+		@include media-breakpoint-up(xl) {
+		    padding: ($element-space__xl * 2);
+		    padding-bottom: ($element-space__xl * 2);
+		    margin-top: ($element-space__xl * 2);
+		}
+
+		.decor {
+			@include secondary-font('semi-bold');
+			@include fluid-type(250px, 370px);
+			position: absolute;
+			line-height: 1;
+			color: $primary-color;
+
+			&--g {
+				top: -225px;
+				left: 40px;
+				z-index: -1;
+
+				@include media-breakpoint-up(md) {
+					top: -300px;
+				}
+			}
+
+			&--b {
+				bottom: -60px;
+				right: 40px;
+				z-index: 1;
+			}
+		}
+
+		&__pattern {
+			position: absolute;
+			height: auto;
+			top: 30%;
+			width: 110vw;
+			left: -50px;
+		}
+
+		&__content-wrapper {
+			max-width: 480px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.single-group {
+			&__title {
+				@include secondary-font('bold');
+				font-size: 24px;
+				line-height: 1.2;
+				font-style: italic;
+			}
+
+			&__content {
+				margin-top: 10px;
+
+				@include media-breakpoint-up(sm) {
+					margin-top: 15px;
+				}
+
+				@include media-breakpoint-up(md) {
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+}

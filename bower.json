@@ -1,0 +1,36 @@
+{
+  "name": "wpteam-workflow",
+  "description": "Workflow - WP Team (http://wpteam.com)",
+  "main": "index.php",
+  "authors": [
+    "WP Team (http://wpteam.com)"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "keyword"
+  ],
+  "homepage": "http://wpteam.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery.easing": "^1.3.1",
+    "matchHeight": "matchheight#^0.7.0",
+    "select2": "^4.0.3",
+    "retinajs": "https://github.com/strues/retinajs.git#^2.1.2",
+    "popper.js": "https://unpkg.com/popper.js",
+    "tooltip.js": "https://unpkg.com/tooltip.js",
+    "jquery-lazy": "^1.7.5",
+    "owl.carousel": "^2.2.1",
+    "gsap": "^1.20.3",
+    "rellax": "*",
+    "aos": "^2.2.0",
+    "parallax.js": "^1.5.0",
+    "imagesloaded": "^4.1.4",
+    "vivus": "^0.4.3"
+  }
+}

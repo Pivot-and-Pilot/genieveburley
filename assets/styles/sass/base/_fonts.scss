@@ -1,0 +1,86 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~ Fonts ~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+	/* ~~~~~~~~~~ FontFace ~~~~~~~~~~ */
+
+	@font-face {
+	    font-family: 'avertabold';
+	    src: url('../fonts/averta_bold-webfont.woff2') format('woff2'),
+	         url('../fonts/averta_bold-webfont.woff') format('woff');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+
+	@font-face {
+	    font-family: 'avertaregularitalic';
+	    src: url('../fonts/intelligent_design_-_averta_regular_italic-webfont.woff2') format('woff2'),
+	         url('../fonts/intelligent_design_-_averta_regular_italic-webfont.woff') format('woff');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+
+	@font-face {
+	    font-family: 'avertasemibold';
+	    src: url('../fonts/intelligent_design_-_averta_semibold-webfont.woff2') format('woff2'),
+	         url('../fonts/intelligent_design_-_averta_semibold-webfont.woff') format('woff');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+
+	@font-face {
+	    font-family: 'avertaregular';
+	    src: url('../fonts/intelligent_design_-_averta-webfont.woff2') format('woff2'),
+	         url('../fonts/intelligent_design_-_averta-webfont.woff') format('woff');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+
+	@font-face {
+	    font-family: 'butlerextrabold';
+	    src: url('../fonts/butler_extrabold-webfont.woff2') format('woff2'),
+	         url('../fonts/butler_extrabold-webfont.woff') format('woff');
+	    font-weight: normal;
+	    font-style: normal;
+	}
+
+
+	/* ~~~~~~~~~~ Averta ~~~~~~~~~~ */
+
+	@mixin primary-font($fontWeight) {
+	    @if $fontWeight == "regular" {
+	    	font-family: 'avertaregular', sans-serif;
+	    } @elseif $fontWeight == "regular-italic" {
+	        font-family: 'avertaregularitalic', sans-serif;
+	    } @elseif $fontWeight == "semi-bold" {
+	        font-family: 'avertasemibold', sans-serif;
+	    } @elseif $fontWeight == "bold" {
+	        font-family: 'avertabold', sans-serif;
+	    }
+	    font-weight: normal;
+	    font-style: normal;
+	}
+
+
+	/* ~~~~~~~~~~ Cormorant Garamond ~~~~~~~~~~ */
+
+	@mixin secondary-font($fontWeight) {
+	    @if $fontWeight == "semi-bold" {
+	        font-weight: 600;
+	    } @elseif $fontWeight == "bold" {
+	        font-weight: 700;
+	    }
+	    font-family: 'Cormorant Garamond', serif;
+	    font-style: normal;
+	}
+
+
+	/* ~~~~~~~~~~ Butler ~~~~~~~~~~ */
+
+	@mixin tertiary-font($fontWeight) {
+	    @if $fontWeight == "extra-bold" {
+	        font-family: 'butlerextrabold';
+	    }
+	    font-style:   normal;
+	  	font-stretch: normal;
+	}

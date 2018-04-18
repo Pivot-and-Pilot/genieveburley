@@ -1,0 +1,150 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~ Footer ~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+	.follow-my-journey {
+		padding: ($element-space__xl * 1.25) 25px 0;
+		background: #fff;
+		color: $primary-color;
+
+		@include media-breakpoint-up(md) {
+			text-align: center;
+		}
+
+		&__icon {
+			width: 32px;
+			height: 32px;
+			display: block;
+		}
+
+		&__title {
+			@include primary-font('bold');
+			@include letter-spacing(100);
+			font-size: 11px;
+			line-height: 1.5;
+			text-transform: uppercase;
+			margin-top: 10px;
+
+			@include media-breakpoint-up(sm) {
+				margin-top: 15px;
+			}
+		}
+
+		&__link {
+			@include primary-font('bold');
+			display: inline-block;
+			font-size: 32px;
+			line-height: 1.2;
+			border-bottom: 2px solid transparent;
+
+			&:hover,
+			&:focus {
+				border-bottom-color: $primary-color;
+			}
+		}
+	}
+
+	.main-footer {
+		padding: ($element-space__xs * 1.5) 25px ($element-space__xs * .75);
+
+		@include media-breakpoint-up(sm) {
+			padding: ($element-space__sm * 1.5) 25px ($element-space__sm * .75);
+		}
+
+		@include media-breakpoint-up(md) {
+			padding: ($element-space__md * 1.5) 25px ($element-space__md * .75);
+		}
+
+		@include media-breakpoint-up(lg) {
+			padding: ($element-space__lg * 1.5) 25px ($element-space__lg * .75);
+		}
+
+		@include media-breakpoint-up(xl) {
+			padding: ($element-space__xl * 1.5) 25px ($element-space__xl * .75);
+		}
+
+		&__logo {
+			width: 70px;
+			display: block;
+			height: 56px;
+
+			@include media-breakpoint-up(sm) {
+				width: 72.5px;
+				height: 58px;
+			}
+
+			@include media-breakpoint-up(md) {
+				width: 75px;
+				height: 60px;
+			}
+
+			@include media-breakpoint-up(lg) {
+				width: 77.5px;
+				height: 63px;
+			}
+
+			@include media-breakpoint-up(xl) {
+				width: 80px;
+				height: 65px;
+			}
+		}
+
+		&__quick-contact,
+		&__address {
+			font-size: 26px;
+			line-height: 1.3;
+			color: $primary-color;
+		}
+
+		&__quick-contact {
+			list-style: none;
+			margin-top: ($element-space__xs * .75);
+
+			@include media-breakpoint-up(sm) {
+				margin-top: ($element-space__sm * .75);
+			}
+
+			@include media-breakpoint-up(md) {
+				margin-top: ($element-space__md * .75);
+			}
+
+			@include media-breakpoint-up(lg) {
+				margin-top: ($element-space__lg * .75);
+			}
+
+			@include media-breakpoint-up(xl) {
+				margin-top: ($element-space__xl * .75);
+			}
+
+			li {
+				 a {
+				 	border-bottom: 1px solid $primary-color;
+
+				 	&:hover,
+				 	&:focus {
+				 		border-bottom-color: transparent;
+				 	}
+				 }
+			}
+		}
+
+		&__second-stage {
+			@include fluid-type(15px, 12px, 1.2);
+			color: $primary-color;
+
+			.indicator {
+				margin: 0 5px;
+			}
+
+			.design {
+				a {
+					border-bottom: 1px solid $primary-color;
+
+					&:hover,
+					&:focus {
+						border-bottom-color: transparent;
+					}
+				}
+			}
+		}
+	}

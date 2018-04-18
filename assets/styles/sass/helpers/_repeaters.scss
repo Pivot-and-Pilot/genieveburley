@@ -1,0 +1,257 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~ Repeaters ~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+    /* ~~~~~~~~~~ Absolute center ~~~~~~~~~~ */
+
+    %absolute-center {
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* ~~~~~~~~~~ Single transition ~~~~~~~~~~ */
+
+    %single-transition {
+        transition: all 0.2s ease-in-out;
+    }
+
+
+    /* ~~~~~~~~~~ Vertical center ~~~~~~~~~~ */
+
+    .vertical-center {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+
+    /* ~~~~~~~~~~ Background cover ~~~~~~~~~~ */
+
+    .background-cover {
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    /* ~~~~~~~~~~ Hide ~~~~~~~~~~ */
+
+    .hide {
+        text-indent: -998em;
+        height: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /* ~~~~~~~~~~ Clearfix ~~~~~~~~~~ */
+
+    .clearfix {
+        clear: both;
+    }
+
+
+    /* ~~~~~~~~~~ Element paddings and margins ~~~~~~~~~~ */
+
+    .element-paddings {
+        padding: $element-space__xs 0;
+
+        @include media-breakpoint-up(sm) {
+            padding: $element-space__sm 0;
+        }
+
+        @include media-breakpoint-up(md) {
+            padding: $element-space__md 0;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding: $element-space__lg 0;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding: $element-space__xl 0;
+        }
+    }
+
+    .element-padding-top {
+        padding-top: $element-space__xs;
+
+        @include media-breakpoint-up(sm) {
+            padding-top: $element-space__sm;
+        }
+
+        @include media-breakpoint-up(md) {
+            padding-top: $element-space__md;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding-top: $element-space__lg;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding-top: $element-space__xl;
+        }
+    }
+
+    .element-padding-bottom {
+        padding-bottom: $element-space__xs;
+
+        @include media-breakpoint-up(sm) {
+            padding-bottom: $element-space__sm;
+        }
+
+        @include media-breakpoint-up(md) {
+            padding-bottom: $element-space__md;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding-bottom: $element-space__lg;
+        }
+
+        @include media-breakpoint-up(xl) {
+            padding-bottom: $element-space__xl;
+        }
+    }
+
+    .element-margins {
+        margin: $element-space__xs 0;
+
+        @include media-breakpoint-up(sm) {
+            margin: $element-space__sm 0;
+        }
+
+        @include media-breakpoint-up(md) {
+            margin: $element-space__md 0;
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin: $element-space__lg 0;
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin: $element-space__xl 0;
+        }
+    }
+
+    .element-margin-top {
+        margin-top: $element-space__xs;
+
+        @include media-breakpoint-up(sm) {
+            margin-top: $element-space__sm;
+        }
+
+        @include media-breakpoint-up(md) {
+            margin-top: $element-space__md;
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-top: $element-space__lg;
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-top: $element-space__xl;
+        }
+    }
+
+    .element-margin-bottom {
+        margin-bottom: $element-space__xs;
+
+        @include media-breakpoint-up(sm) {
+            margin-bottom: $element-space__sm;
+        }
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: $element-space__md;
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: $element-space__lg;
+        }
+
+        @include media-breakpoint-up(xl) {
+            margin-bottom: $element-space__xl;
+        }
+    }
+
+
+    /* ~~~~~~~~~~ Element small margin / padding top ~~~~~~~~~~ */
+
+    .element-small-margin-top {
+        margin-top: 15px;
+
+        @include media-breakpoint-up(sm) {
+            margin-top: 20px;
+        }
+
+        @include media-breakpoint-up(md) {
+            margin-top: 25px;
+        }
+    }
+
+    .element-small-padding-top {
+        padding-top: 15px;
+
+        @include media-breakpoint-up(sm) {
+            padding-top: 20px;
+        }
+
+        @include media-breakpoint-up(md) {
+            padding-top: 25px;
+        }
+    }
+
+
+
+
+
+    .blur  {
+      -webkit-animation-name : blur  ;
+      animation-name : blur  ;
+    }
+    @-webkit-keyframes blur  {
+      0% {
+        text-shadow: 0px 0px 15px #fff;
+        opacity: 0;
+      }
+      100% {
+        text-shadow: 0px 0px 0px #fff;
+        opacity: 1;
+      }
+    }
+    @keyframes blur  {
+      0% {
+        text-shadow: 0px 0px 15px #fff;
+        opacity: 0;
+      }
+      100% {
+        text-shadow: 0px 0px 0px #fff;
+        opacity: 1;
+      }
+    }
+
+    .unblur  {
+      -webkit-animation-name: unblur  ;
+      animation-name : unblur  ;
+    }
+    @-webkit-keyframes unblur {
+      0% {
+        text-shadow: 0px 0px 0px #fff;
+        opacity: 1;
+      }
+      100% {
+        text-shadow: 0px 0px 15px #fff;
+        opacity: 0;
+      }
+    }
+    @keyframes unblur {
+      0% {
+        text-shadow: 0px 0px 0px #fff;
+        opacity: 1;
+      }
+      100% {
+        text-shadow: 0px 0px 15px #fff;
+        opacity: 0;
+      }
+    }
