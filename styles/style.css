@@ -12262,8 +12262,8 @@ iframe.stripe_checkout_app .Button-animationWrapper-child--primary {
       .chiro-template .adjustments .single-adjust {
         max-width: 20vw; } }
     .chiro-template .adjustments .single-adjust__icon {
-      width: 85px;
-      height: 85px;
+      width: 115px;
+      height: 115px;
       fill-opacity: 0;
       -webkit-transition: fill-opacity 1s;
       -o-transition: fill-opacity 1s;

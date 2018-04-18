@@ -8,7 +8,7 @@
 
 <main id="main" class="chiro-template" tabindex="-1">
 
-	<a href="#cta-carousel" class="section-scroll-button genieve-burley-button genieve-burley-button__full-background genieve-burley-button__full-background--primary-color scroll">book appointment</a>
+	<a href="https://bechiro.janeapp.com/#/staff_member/41" target="_blank" class="section-scroll-button genieve-burley-button genieve-burley-button__full-background genieve-burley-button__full-background--primary-color">book appointment</a>
 
 	<?php get_template_part('partials/hello-section'); ?>
 
